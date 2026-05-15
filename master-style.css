@@ -1,0 +1,69 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.project-container {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+}
+.input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+input { flex: 1; padding: 10px; border-radius: 5px; border: none; }
+button { background: #3b82f6; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }
+
+ul { list-style: none; padding: 0; text-align: right; }
+li { background: #334155; padding: 10px; margin-bottom: 5px; border-radius: 5px; display: flex; justify-content: space-between; }
+
+.colors-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 20px; }
+.color-item { height: 80px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8); display: none; /* سيتم إظهارها بالجافا سكريبت */
+    align-items: center; justify-content: center;
+}
+.modal-content { background: white; color: #333; padding: 30px; border-radius: 10px; width: 300px; }
+.cards-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 50px 30px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card-icon { font-size: 60px; margin-bottom: 15px; display: block; }
+.card-title { font-size: 1.4rem; font-weight: 500; }
+.selection-page {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.back-link { margin-top: 20px; color: #94a3b8; text-decoration: none; }
