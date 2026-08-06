@@ -4,7 +4,7 @@ select max(salary)
 from Instructor
 union all
 select max(salary)
-from Instructor
+from Instructorhgfhf
 where Salary != (select max(salary)
 from Instructor)
 union all
